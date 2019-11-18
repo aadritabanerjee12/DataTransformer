@@ -90,19 +90,15 @@ public void GetAggregatedLoadProfileData_WhenCalled_ReturnsAggregatedItems()
         
 
 # Assumptions
-File format will be same
-File name will follow the same pattern as provided
-Blob storage container name should be ‘import’
+1) File format will be same
+2) File name will follow the same pattern as provided
+3) Blob storage container name should be ‘import’
 
 
-#Scope for improvement
+# Scope for improvement
 Only unit tests for a single controller login have been written. For complete code coverage, the other classes as well as the data layer needs to be tested. Integration tests need to be added.
 In-memory DB or Autofixture could be used for automated test data creation
 Tools like Resharper or Stylecop could be used for best standard coding and convention
 File validation, data validation(e.g. wrong data type and unit combination, null values etc.) should be handled while loading the data. This will minimize the risk of data related exception in the API
 Azure data factory could be used for data loading from csv files, instead of Stored procedure
-
-
-# Author
-Aadrita Banerjee
 
