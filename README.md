@@ -100,6 +100,5 @@ public void GetAggregatedLoadProfileData_WhenCalled_ReturnsAggregatedItems()
 1) Only unit tests for a single controller login have been written. For complete code coverage, the other classes as well as the data layer needs to be tested. Integration tests need to be added.
 2) In-memory DB could be used for automated test data creation
 3) Tools like Resharper or Stylecop could be used for best standard coding and convention
-4) File validation, data validation(e.g. wrong data type and unit combination, null values etc.) should be handled while loading the data. This will minimize the risk of data related exception in the API
-5) Azure data factory could be used for data loading from csv files, instead of Stored procedure
+
 
