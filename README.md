@@ -15,9 +15,10 @@ Added minimal NuGet packages in each project
 
 DbContext
 =============================
-Setup “ApplicationDbContext” class which inherits from DbContext and is located in the “DataTransformer.Data” project. There are two DbSets: LoadProfile and Tou:
+Setup “ApplicationDbContext” class which inherits from DbContext and is located in the “DataTransformer.Data” project. There are two DbSets: LoadProfile and Tou
 In the constructor of ApplicationDbContext, there is parameter “DbContextOptions<ApplicationDbContext>”. This is required to inject connection string to SQL Database located in Microsoft Azure cloud.
 In the Web API project in the “Startup” class, the usage of Entity Framework and database connection are indicated:
+
 services.AddDbContext<ApplicationDbContext>(options =>
               options.UseSqlServer(
                   Configuration.GetConnectionString("ApplicationDbContext")
@@ -63,7 +64,7 @@ services.AddScoped<IGenericRepository<LoadProfileAggregated>, LoadProfileReposit
 Controllers
 =============================
 In the “DataTransformer.WebAPI” project there two separate controllers responsible for handling the HTTP get requests. A repository object is injected into the controller's constructor
-<Brief description of Azure Function and SQL Azure DB>
+
 
 Unit Tests
 =============================
